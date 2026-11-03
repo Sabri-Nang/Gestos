@@ -1,0 +1,9 @@
+# Dependencias directas del MVP. Objetivo: Python 3.12, Linux x86_64.
+# MediaPipe Tasks; no usar la API antigua mp.solutions.hands.
+mediapipe>=0.10.30,<2
+# Captura de cámara y vista de diagnóstico. Instalar una sola variante de OpenCV.
+opencv-contrib-python>=4.11,<5
+# Cálculos sobre landmarks y trayectorias.
+numpy>=1.26,<3
+# Envío de teclas a la ventana enfocada; en Linux requiere validar X11/XWayland.
+PyAutoGUI==0.9.54

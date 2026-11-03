@@ -1,0 +1,26 @@
+# Ajuste usado en la segunda prueba de simulación.
+[camera]
+index = 0
+mirror = true
+confidence = 0.6
+
+[gestures]
+# Un barrido debe recorrer al menos el 10 % del ancho de la imagen.
+# Menos distancia permite mantener la palma en el centro del encuadre.
+distance = 0.10
+min_duration_ms = 150
+max_duration_ms = 1000
+cooldown_ms = 800
+stable_ms = 300
+# Recuperación breve, limitada a una palma que reaparece cerca.
+dropout_ms = 180
+hand_switch_ms = 120
+
+[presentation]
+countdown = 5
+fist_hold_ms = 1000
+release_ms = 300
+
+[keys]
+next = "right"
+previous = "left"
